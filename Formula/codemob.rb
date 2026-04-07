@@ -5,13 +5,13 @@
 class Codemob < Formula
   desc "AI agent workspace manager — parallel isolated sessions via git worktrees"
   homepage "https://github.com/codemob-ai/codemob"
-  version "1.2.3"
+  version "1.2.4"
   license "GPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/codemob-ai/codemob/releases/download/v1.2.3/codemob_1.2.3_darwin_amd64.tar.gz"
-      sha256 "dc12ec902f18c38ef8ce47885a49d692aba135900d5d26a00e77f551124a20f1"
+      url "https://github.com/codemob-ai/codemob/releases/download/v1.2.4/codemob_1.2.4_darwin_amd64.tar.gz"
+      sha256 "01cbfedfe4bca4eeddaa7adb5f1859144b6faeba83358f9a13feda80deba619c"
 
       define_method(:install) do
         bin.install "codemob"
@@ -19,8 +19,8 @@ class Codemob < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/codemob-ai/codemob/releases/download/v1.2.3/codemob_1.2.3_darwin_arm64.tar.gz"
-      sha256 "accc5c65cc8bd0490a4635b162e921b6e742ef754ce8dbb2f05590422a8e7815"
+      url "https://github.com/codemob-ai/codemob/releases/download/v1.2.4/codemob_1.2.4_darwin_arm64.tar.gz"
+      sha256 "386e0f941d4d6bedf8266150c7877c188f051a911832fc090f6ec9621b030abc"
 
       define_method(:install) do
         bin.install "codemob"
@@ -31,16 +31,16 @@ class Codemob < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codemob-ai/codemob/releases/download/v1.2.3/codemob_1.2.3_linux_amd64.tar.gz"
-      sha256 "69266e14f8661e1c272bb2196ac0c7120f25ab15f62122aee594b751cfadb849"
+      url "https://github.com/codemob-ai/codemob/releases/download/v1.2.4/codemob_1.2.4_linux_amd64.tar.gz"
+      sha256 "4c139d24a0df3ee8bca00f40ff24b5ea9a9d2b478a48f832888d204ec5159aba"
       define_method(:install) do
         bin.install "codemob"
         (share/"codemob").install "codemob-shell.sh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codemob-ai/codemob/releases/download/v1.2.3/codemob_1.2.3_linux_arm64.tar.gz"
-      sha256 "53cd9320770bac4851041e5ff475970cf71ad03717cb92463fef882c47f7b9aa"
+      url "https://github.com/codemob-ai/codemob/releases/download/v1.2.4/codemob_1.2.4_linux_arm64.tar.gz"
+      sha256 "45788a9912a4e581797da464726f285e984ced7f6d6a21d7cafb24871b13ee99"
       define_method(:install) do
         bin.install "codemob"
         (share/"codemob").install "codemob-shell.sh"
