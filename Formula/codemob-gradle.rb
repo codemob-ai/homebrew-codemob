@@ -14,6 +14,7 @@
 class CodemobGradle < Formula
   desc "Per-worktree cloned Gradle homes so concurrent builds stop fighting over locks"
   homepage "https://github.com/codemob-ai/codemob-gradle"
+  license "Apache-2.0"
   head "https://github.com/codemob-ai/codemob-gradle.git", branch: "main"
 
   depends_on :macos
